@@ -1,0 +1,139 @@
+body {
+    background-color: black;
+}
+
+header {
+    font-family: 'Playfair Display', serif;
+}
+
+.caixa{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.imagem-principal {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+nav {
+    position: absolute;
+    top: 50px; /* Colocando a nav no alto */
+    font-size: 32px;
+    right: 90px;
+    
+    
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+nav li:hover{
+
+    background-color: rgb(115, 9, 9);
+    
+}
+
+nav a {
+    text-decoration: none;
+    -webkit-text-stroke: 0.2px red;
+    color: black;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+main {
+    font-family: 'Tiro Gurmukhi', serif;
+    background-color: black;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 35px;
+    padding: 2% 17% 0 0;
+    color: brown;
+}
+
+.info-serie {
+    display: flex;
+    margin: 1.9rem 2rem 0 ;
+    gap: 10px;
+    color: brown;
+}
+
+.info-serie--paragrafo {
+    /*padding: 2% 1% 0 5%; */
+    margin: 0 20%;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.info-serie--imagem {
+    height: 35rem;
+    margin: 0 12px 0 0;
+}
+
+
+
+.personagem {
+    display: flex;
+    color: rgb(189, 116, 89);
+    gap: 20px;
+    margin: 7rem 2rem  ;
+    align-items: center;
+}
+
+.personagem__titulo {
+    font-size: 40px;
+    position: absolute;
+    margin: 0 0 25% 50%;
+}
+
+.personagem__imagem--esquerdo {
+    width: 20%;
+}
+
+.personagem--lado--direito {
+    display: flexbox;
+    flex-direction: row-reverse;
+}
+
+.personagem__imagem--lado--direito {
+    width: 40%;
+}
+
+.personagem__titulo--lado--direito {
+    margin: 0 39% 25% 0;
+    
+}
+
+.personagem__info {
+    font-size: 18px;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime='left'] {
+    transform: translate3d(-50px, 0, 0); /*Colocando a imagem a -50px a esquerda */
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+footer {
+    text-align: center;
+}
